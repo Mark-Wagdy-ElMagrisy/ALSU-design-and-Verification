@@ -1,0 +1,9 @@
+*.docx
+work/
+*.cr.mti
+vsim.wlf
+transcript
+ALSU.mpf
+ALSU.mpf_new
+*.sv.bak
+certe_dump.xml
