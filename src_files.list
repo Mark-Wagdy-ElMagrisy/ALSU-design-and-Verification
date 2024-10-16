@@ -1,0 +1,16 @@
+verilog_files/ALSU.sv
+verilog_files/golden_ALSU.sv
+verilog_files/enum_pkg.sv
+verilog_files/alsu_if.sv
+verilog_files/alsu_seq_item.sv
+verilog_files/alsu_seq.sv
+verilog_files/alsu_sequencer.sv
+verilog_files/alsu_driver.sv
+verilog_files/alsu_monitor.sv
+verilog_files/alsu_agent.sv
+verilog_files/alsu_coverage.sv
+verilog_files/alsu_score.sv
+verilog_files/alsu_env.sv
+verilog_files/alsu_test.sv
+verilog_files/SVA.sv
+top.sv

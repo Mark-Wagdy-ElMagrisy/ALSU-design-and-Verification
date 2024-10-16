@@ -1,0 +1,419 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /\top#DUT /SVA_inst
+=== Design Unit: work.SVA
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       5         5         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/\top#DUT /SVA_inst/as_red_B_on_opcode_0
+                     verilog_files/SVA.sv(43)           0          1
+/\top#DUT /SVA_inst/as_xor_red_A_on_opcode_1
+                     verilog_files/SVA.sv(44)           0          1
+/\top#DUT /SVA_inst/as_xor_red_B_on_opcode_1
+                     verilog_files/SVA.sv(45)           0          1
+/\top#DUT /SVA_inst/as_shift_left_on_opcode_4
+                     verilog_files/SVA.sv(46)           0          1
+/\top#DUT /SVA_inst/as_shift_right_on_opcode_4
+                     verilog_files/SVA.sv(47)           0          1
+
+Directive Coverage:
+    Directives                       5         5         0   100.00%
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/\top#DUT /SVA_inst/cv_red_B_on_opcode_0 SVA    Verilog  SVA  verilog_files/SVA.sv(50)
+                                                                                24 Covered   
+/\top#DUT /SVA_inst/cv_xor_red_A_on_opcode_1 
+                                         SVA    Verilog  SVA  verilog_files/SVA.sv(51)
+                                                                                 1 Covered   
+/\top#DUT /SVA_inst/cv_xor_red_B_on_opcode_1 
+                                         SVA    Verilog  SVA  verilog_files/SVA.sv(52)
+                                                                                18 Covered   
+/\top#DUT /SVA_inst/cv_shift_left_on_opcode_4 
+                                         SVA    Verilog  SVA  verilog_files/SVA.sv(53)
+                                                                               145 Covered   
+/\top#DUT /SVA_inst/cv_shift_right_on_opcode_4 
+                                         SVA    Verilog  SVA  verilog_files/SVA.sv(54)
+                                                                               153 Covered   
+
+=================================================================================
+=== Instance: /\top#DUT 
+=== Design Unit: work.ALSU
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        32        31         1    96.87%
+
+================================Branch Details================================
+
+Branch Coverage for instance /\top#DUT 
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File verilog_files/ALSU.sv
+------------------------------------IF Branch------------------------------------
+    48                                      5224     Count coming in to IF
+    48              1                        456     
+    59              1                       4768     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    75                                      5229     Count coming in to IF
+    75              1                        456     
+    77              1                       4773     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    78                                      4773     Count coming in to IF
+    78              1                        333     
+    80              1                       4440     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    87                                      5212     Count coming in to IF
+    87              1                        442     
+    90              1                       4770     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    91                                      4770     Count coming in to IF
+    91              1                        408     
+    93              1                        955     
+    95              1                        945     
+    97              1                        163     
+    99              1                       2299     
+Branch totals: 5 hits of 5 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    100                                     2299     Count coming in to CASE
+    101             1                        608     
+    111             1                        375     
+    121             1                        367     
+    126             1                        325     
+    127             1                        312     
+    133             1                        312     
+                                         ***0***     All False Count
+Branch totals: 6 hits of 7 branches = 85.71%
+
+------------------------------------IF Branch------------------------------------
+    102                                      608     Count coming in to IF
+    102             1                          2     
+    104             1                         12     
+    106             1                         24     
+    108             1                        570     
+Branch totals: 4 hits of 4 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    112                                      375     Count coming in to IF
+    112             1                          2     
+    114             1                         20     
+    116             1                         18     
+    118             1                        335     
+Branch totals: 4 hits of 4 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    128                                      312     Count coming in to IF
+    128             1                        154     
+    130             1                        158     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    134                                      312     Count coming in to IF
+    134             1                        144     
+    136             1                        168     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       6         6         0   100.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /\top#DUT  --
+
+  File verilog_files/ALSU.sv
+----------------Focused Condition View-------------------
+Line       91 Item    1  (bypass_A_reg && bypass_B_reg)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+    Input Term   Covered  Reason for no coverage   Hint
+   -----------  --------  -----------------------  --------------
+  bypass_A_reg         Y
+  bypass_B_reg         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  bypass_A_reg_0        -                             
+  Row   2:          1  bypass_A_reg_1        bypass_B_reg                  
+  Row   3:          1  bypass_B_reg_0        bypass_A_reg                  
+  Row   4:          1  bypass_B_reg_1        bypass_A_reg                  
+
+----------------Focused Condition View-------------------
+Line       102 Item    1  (red_op_A_reg && red_op_B_reg)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+    Input Term   Covered  Reason for no coverage   Hint
+   -----------  --------  -----------------------  --------------
+  red_op_A_reg         Y
+  red_op_B_reg         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  red_op_A_reg_0        -                             
+  Row   2:          1  red_op_A_reg_1        red_op_B_reg                  
+  Row   3:          1  red_op_B_reg_0        red_op_A_reg                  
+  Row   4:          1  red_op_B_reg_1        red_op_A_reg                  
+
+----------------Focused Condition View-------------------
+Line       112 Item    1  (red_op_A_reg && red_op_B_reg)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+    Input Term   Covered  Reason for no coverage   Hint
+   -----------  --------  -----------------------  --------------
+  red_op_A_reg         Y
+  red_op_B_reg         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  red_op_A_reg_0        -                             
+  Row   2:          1  red_op_A_reg_1        red_op_B_reg                  
+  Row   3:          1  red_op_B_reg_0        red_op_A_reg                  
+  Row   4:          1  red_op_B_reg_1        red_op_A_reg                  
+
+
+Expression Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Expressions                      8         8         0   100.00%
+
+================================Expression Details================================
+
+Expression Coverage for instance /\top#DUT  --
+
+  File verilog_files/ALSU.sv
+----------------Focused Expression View-----------------
+Line       42 Item    1  ((red_op_A_reg | red_op_B_reg) & (opcode_reg[1] | opcode_reg[2]))
+Expression totals: 4 of 4 input terms covered = 100.00%
+
+     Input Term   Covered  Reason for no coverage   Hint
+    -----------  --------  -----------------------  --------------
+   red_op_A_reg         Y
+   red_op_B_reg         Y
+  opcode_reg[1]         Y
+  opcode_reg[2]         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  red_op_A_reg_0        ((opcode_reg[1] | opcode_reg[2]) && ~red_op_B_reg)
+  Row   2:          1  red_op_A_reg_1        ((opcode_reg[1] | opcode_reg[2]) && ~red_op_B_reg)
+  Row   3:          1  red_op_B_reg_0        ((opcode_reg[1] | opcode_reg[2]) && ~red_op_A_reg)
+  Row   4:          1  red_op_B_reg_1        ((opcode_reg[1] | opcode_reg[2]) && ~red_op_A_reg)
+  Row   5:          1  opcode_reg[1]_0       ((red_op_A_reg | red_op_B_reg) && ~opcode_reg[2])
+  Row   6:          1  opcode_reg[1]_1       ((red_op_A_reg | red_op_B_reg) && ~opcode_reg[2])
+  Row   7:          1  opcode_reg[2]_0       ((red_op_A_reg | red_op_B_reg) && ~opcode_reg[1])
+  Row   8:          1  opcode_reg[2]_1       ((red_op_A_reg | red_op_B_reg) && ~opcode_reg[1])
+
+----------------Focused Expression View-----------------
+Line       43 Item    1  (opcode_reg[1] & opcode_reg[2])
+Expression totals: 2 of 2 input terms covered = 100.00%
+
+     Input Term   Covered  Reason for no coverage   Hint
+    -----------  --------  -----------------------  --------------
+  opcode_reg[1]         Y
+  opcode_reg[2]         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  opcode_reg[1]_0       opcode_reg[2]                 
+  Row   2:          1  opcode_reg[1]_1       opcode_reg[2]                 
+  Row   3:          1  opcode_reg[2]_0       opcode_reg[1]                 
+  Row   4:          1  opcode_reg[2]_1       opcode_reg[1]                 
+
+----------------Focused Expression View-----------------
+Line       44 Item    1  (invalid_red_op | invalid_opcode)
+Expression totals: 2 of 2 input terms covered = 100.00%
+
+      Input Term   Covered  Reason for no coverage   Hint
+     -----------  --------  -----------------------  --------------
+  invalid_red_op         Y
+  invalid_opcode         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  invalid_red_op_0      ~invalid_opcode               
+  Row   2:          1  invalid_red_op_1      ~invalid_opcode               
+  Row   3:          1  invalid_opcode_0      ~invalid_red_op               
+  Row   4:          1  invalid_opcode_1      ~invalid_red_op               
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      60        60         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /\top#DUT  --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File verilog_files/ALSU.sv
+    19              1                      10015     
+    20              1                        444     
+    21              1                       2541     
+    22              1                        471     
+    23              1                        497     
+    24              1                       2098     
+    25              1                       2114     
+    26              1                       2470     
+    27              1                       2463     
+    28              1                       4160     
+    29              1                       4278     
+    30              1                       4349     
+    42              1                       4292     
+    43              1                       4152     
+    44              1                        666     
+    47              1                       5224     
+    49              1                        456     
+    50              1                        456     
+    51              1                        456     
+    52              1                        456     
+    53              1                        456     
+    54              1                        456     
+    55              1                        456     
+    56              1                        456     
+    57              1                        456     
+    58              1                        456     
+    60              1                       4768     
+    61              1                       4768     
+    62              1                       4768     
+    63              1                       4768     
+    64              1                       4768     
+    65              1                       4768     
+    66              1                       4768     
+    67              1                       4768     
+    68              1                       4768     
+    69              1                       4768     
+    74              1                       5229     
+    76              1                        456     
+    79              1                        333     
+    81              1                       4440     
+    86              1                       5212     
+    88              1                        442     
+    92              1                        408     
+    94              1                        955     
+    96              1                        945     
+    98              1                        163     
+    103             1                          2     
+    105             1                         12     
+    107             1                         24     
+    109             1                        570     
+    113             1                          2     
+    115             1                         20     
+    117             1                         18     
+    119             1                        335     
+    123             1                        367     
+    126             1                        325     
+    129             1                        154     
+    131             1                        158     
+    135             1                        144     
+    137             1                        168     
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        120       118         2    98.33%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /\top#DUT  --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                            A[2-0]           1           1      100.00 
+                                        A_reg[2-0]           1           1      100.00 
+                                            B[2-0]           1           1      100.00 
+                                        B_reg[2-0]           1           1      100.00 
+                                          bypass_A           1           1      100.00 
+                                      bypass_A_reg           1           1      100.00 
+                                          bypass_B           1           1      100.00 
+                                      bypass_B_reg           1           1      100.00 
+                                               cin           1           1      100.00 
+                                        cin_reg[1]           0           0        0.00 
+                                        cin_reg[0]           1           1      100.00 
+                                               clk           1           1      100.00 
+                                         direction           1           1      100.00 
+                                     direction_reg           1           1      100.00 
+                                           invalid           1           1      100.00 
+                                    invalid_opcode           1           1      100.00 
+                                    invalid_red_op           1           1      100.00 
+                                        leds[15-0]           1           1      100.00 
+                                       opcode[2-0]           1           1      100.00 
+                                   opcode_reg[2-0]           1           1      100.00 
+                                          out[5-0]           1           1      100.00 
+                                          red_op_A           1           1      100.00 
+                                      red_op_A_reg           1           1      100.00 
+                                          red_op_B           1           1      100.00 
+                                      red_op_B_reg           1           1      100.00 
+                                               rst           1           1      100.00 
+                                         serial_in           1           1      100.00 
+                                     serial_in_reg           1           1      100.00 
+
+Total Node Count     =         60 
+Toggled Node Count   =         59 
+Untoggled Node Count =          1 
+
+Toggle Coverage      =      98.33% (118 of 120 bins)
+
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/\top#DUT /SVA_inst/cv_red_B_on_opcode_0 SVA    Verilog  SVA  verilog_files/SVA.sv(50)
+                                                                                24 Covered   
+/\top#DUT /SVA_inst/cv_xor_red_A_on_opcode_1 
+                                         SVA    Verilog  SVA  verilog_files/SVA.sv(51)
+                                                                                 1 Covered   
+/\top#DUT /SVA_inst/cv_xor_red_B_on_opcode_1 
+                                         SVA    Verilog  SVA  verilog_files/SVA.sv(52)
+                                                                                18 Covered   
+/\top#DUT /SVA_inst/cv_shift_left_on_opcode_4 
+                                         SVA    Verilog  SVA  verilog_files/SVA.sv(53)
+                                                                               145 Covered   
+/\top#DUT /SVA_inst/cv_shift_right_on_opcode_4 
+                                         SVA    Verilog  SVA  verilog_files/SVA.sv(54)
+                                                                               153 Covered   
+
+TOTAL DIRECTIVE COVERAGE: 100.00%  COVERS: 5
+
+ASSERTION RESULTS:
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/\top#DUT /SVA_inst/as_red_B_on_opcode_0
+                     verilog_files/SVA.sv(43)           0          1
+/\top#DUT /SVA_inst/as_xor_red_A_on_opcode_1
+                     verilog_files/SVA.sv(44)           0          1
+/\top#DUT /SVA_inst/as_xor_red_B_on_opcode_1
+                     verilog_files/SVA.sv(45)           0          1
+/\top#DUT /SVA_inst/as_shift_left_on_opcode_4
+                     verilog_files/SVA.sv(46)           0          1
+/\top#DUT /SVA_inst/as_shift_right_on_opcode_4
+                     verilog_files/SVA.sv(47)           0          1
+
+Total Coverage By Instance (filtered view): 99.31%
+
